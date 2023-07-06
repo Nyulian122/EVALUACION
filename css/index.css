@@ -1,0 +1,75 @@
+/* pc*/
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /*tablets */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* huawei P20 */
+  @media (max-width: 480px) {
+    .grid-container {
+      width: 80%;
+      padding: 10px;
+      align-items:left;
+    }
+    
+    .grid-item {
+      padding: 10px;
+    }
+  }
+  
